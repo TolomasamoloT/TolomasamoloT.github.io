@@ -2150,7 +2150,6 @@ body {
   width: 100%;
   height: 300vh;
   position: relative;
-  background: white;
   display: flex;
 }
 .left {
