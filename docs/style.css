@@ -373,8 +373,8 @@
   .mb-6 {
     margin-bottom: calc(var(--spacing) * 6);
   }
-  .mb-\[4vh\] {
-    margin-bottom: 4vh;
+  .mb-\[2vh\] {
+    margin-bottom: 2vh;
   }
   .mb-\[10vh\] {
     margin-bottom: 10vh;
@@ -1352,8 +1352,8 @@
   .p-6 {
     padding: calc(var(--spacing) * 6);
   }
-  .p-\[10vh\] {
-    padding: 10vh;
+  .p-\[5vh\] {
+    padding: 5vh;
   }
   .text-center {
     text-align: center;
@@ -1982,6 +1982,11 @@
       margin-bottom: calc(var(--spacing) * 8);
     }
   }
+  .md\:animate-bounce {
+    @media (width >= 48rem) {
+      animation: var(--animate-bounce);
+    }
+  }
   .md\:flex-row {
     @media (width >= 48rem) {
       flex-direction: row;
@@ -2141,16 +2146,23 @@ body {
   transform: translateY(0);
 }
 .paralax {
-  font-size: 10vh;
+  font-size: 5vh;
 }
 .paralax-small {
-  font-size: 5vh;
+  font-size: 2.5vh;
 }
 .stack-area {
   width: 100%;
   height: 300vh;
   position: relative;
   display: flex;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+@media (max-width: 799px), (min-width: 2001px) {
+  .stack-area {
+    display: none;
+  }
 }
 .left {
   height: 100vh;
